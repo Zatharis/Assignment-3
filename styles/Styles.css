@@ -10,21 +10,41 @@
  */
 
 p {border: 5px solid green;
-   width: 300px;}
-article figure img:nth-of-type(1) {
+   width: 500px;}
+/* p:nth-child(2) { */
+    /* position: relative; */
+    /* right: 0; */
+    /* top: 0; */
+    /* width: 100px; */
+/* } */
+
+article:nth-of-type(2n-1) img {
+    margin-right: 10px;
     float: left;
-    width: 100px;
+    width: 50px;
 }
 
-article figure img:nth-of-type(3) {
-    float: left;
-    width: 100px;
-}
-
-article figure img:nth-child(2){
+article:nth-of-type(even) img {
+    margin-left: 10px;
+    position: relative;
     float: right;
-    width: 100px;
+    width: 50px;
 }
+
+/* article figure img:nth-child(1) { */
+    /* float: right; */
+    /* width: 100px; */
+/* } */
+
+/* article figure img:nth-child(3) { */
+    /* float: left; */
+    /* width: 100px; */
+/* } */
+
+/* article figure img:nth-child(2){ */
+    /* float: right; */
+    /* width: 100px; */
+/* } */
 
 body {
     background: linear-gradient(rgb(92, 92, 92), hsl(0, 0%, 78%))
